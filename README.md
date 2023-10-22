@@ -1,8 +1,18 @@
 # Pathfinder Visualiser
 
-This is a app built in `React.js` to visualise popular algorithm apps.
+This is a app built in `React.js` to visualise algorithms.
 
 ## To run:
-Open terminal and go to the directory of the project and write `npm start` to start the app.
+1. Open terminal and go to the directory of the project and write `npm start` to start the app.
 
-A popup or browser window with address `http://localhost:3000/` should open with the visualiser for the alogorithms.
+2. A popup or browser window with address `http://localhost:3000/` should open with the visualiser for the alogorithms.
+
+3. A visual grid with start and end node should appear.
+
+4. Add node walls if desired 
+
+5. Click on `Visualize Dijikstra Algorithm`
+
+6. The path should be visualised
+
+7. Click on `Reset Visualisation` to restart

@@ -122,8 +122,8 @@ export default class Pathfinder extends Component {
     return (
       <div>
         
-        This is an Algorithm Path Visualizer.
-        Press Visualize Dijikstra Algorithm to run
+        This is an algorithm path visualizer.
+        Press Start Visualization to run.
         <br></br>
         
 
@@ -131,7 +131,7 @@ export default class Pathfinder extends Component {
           className="button"
           onClick={() => this.visualizePathfinding()}
           disabled={isVisualizing}>
-          Visualize Dijikstra Algorithm
+          Start Visualization
         </button>
 
         <div className="grid">
