@@ -1,3 +1,78 @@
+.button {
+  width: 100px;
+  height: 75px;
+  background-color: aqua;
+  padding: 1%;
+  margin-top: 0.5%;
+}
+
+.resetbutton {
+  width: 100px;
+  height: 75px;
+  background-color: crimson;
+  padding: 1%;
+  margin-top: 4%;
+  margin-bottom: 1%;
+}
+
+
 .grid {
-  margin: 100px 0 0;
+  display: grid;
+  grid-template-columns: repeat(74, 20px);
+  grid-template-rows: repeat(20, 20px);
+  padding: 2%;
+}
+
+.node {
+  width: 20px;
+  height: 20px;
+  background-color: white;
+  border: 1px solid black;
+  box-sizing: border-box;
+}
+
+.node-start {
+  background-color: green;
+}
+
+.node-finish {
+  background-color: red;
+}
+
+.node-wall {
+  background-color: black;
+}
+
+.node-visited {
+  background-color: rgb(255, 254, 106);
+  animation-name: node-animation;
+  animation-duration: 0.3s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+}
+
+.node-shortest-path {
+  background-color: rgb(106, 190, 255);
+  animation-name: node-animation;
+  animation-duration: 0.3s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+}
+
+@keyframes node-animation {
+  0% {
+    transform: scale(0.5);
+    background-color: rgb(255, 255, 106);
+  }
+
+  50% {
+    transform: scale(3);
+    background-color: rgb(148, 106, 255);
+    shape-rendering: crispEdges;
+  }
+
+  100% {
+    transform: scale(1);
+    background-color: rgb(255, 255, 106);
+  }
 }
