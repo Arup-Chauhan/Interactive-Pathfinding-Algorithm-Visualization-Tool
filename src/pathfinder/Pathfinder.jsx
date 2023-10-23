@@ -4,8 +4,8 @@ import { dijkstra, getNodesInShortestPathOrder } from "../algorithms/dijkstra";
 
 import "./Pathfinder.css";
 
-const START_NODE_ROW = 37;
-const START_NODE_COL = 3;
+const START_NODE_ROW = 1;
+const START_NODE_COL = 1;
 const FINISH_NODE_ROW = 72;
 const FINISH_NODE_COL = 18;
 
@@ -120,13 +120,14 @@ export default class Pathfinder extends Component {
     const { grid, mouseIsPressed, isVisualizing } = this.state;
 
     return (
+
+      
       <div>
         
-        This is an algorithm path visualizer.
+        <h></h>This is an algorithm path visualizer.
         Press Start Visualization to run.
         <br></br>
-        
-
+    
         <button
           className="button"
           onClick={() => this.visualizePathfinding()}
