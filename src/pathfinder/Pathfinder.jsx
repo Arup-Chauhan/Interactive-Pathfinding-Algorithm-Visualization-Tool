@@ -106,12 +106,9 @@ export default class Pathfinder extends Component {
   }
 
   resetVisualization() {
-    // Clear the grid and reset any other necessary state properties
     this.setState({
       grid: [],
       isVisualizing: false,
-
-      // Reset other state properties
     });
     window.location.reload();
   }
