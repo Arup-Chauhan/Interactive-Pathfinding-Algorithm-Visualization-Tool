@@ -1,4 +1,4 @@
-# Pathfinder Visualiser
+# Interactive Pathfinding Algorithm Visualization Tool
 
 This is a app built in `React.js` to visualise algorithms.
 
